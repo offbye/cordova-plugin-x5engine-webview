@@ -1,0 +1,37 @@
+{
+  "name": "cordova-plugin-x5engine-webview",
+  "version": "2.0.0",
+  "description": "Changes the default WebView to QQ X5 WebView",
+  "cordova": {
+    "id": "cordova-plugin-x5engine-webview",
+    "platforms": [
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/offbye/cordova-plugin-x5engine-webview.git"
+  },
+  "keywords": [
+    "cordova",
+    "chromium",
+    "x5engine",
+    "webview",
+    "engine",
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "engines": [{
+    "name": "cordova-android",
+    "version": ">=4"
+  }, {
+    "name": "cordova-plugman",
+    "version": ">=4.2.0"
+  }],
+  "author": "",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/offbye/cordova-plugin-x5engine-webview"
+  },
+  "homepage": "https://github.com/offbye/cordova-plugin-x5engine-webview"
+}

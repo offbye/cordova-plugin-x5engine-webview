@@ -39,4 +39,10 @@ $ cordova plugin add  https://github.com/offbye/cordova-plugin-x5engine-webview.
 $ cordova build android
 ```
 
-### Configure
+### Known issue
+1. 64位手机上加载包含x5 so文件的插件报错
+`TBS:initX5Core -- loadSucc: false; exception: java.lang.reflect.InvocationTargetException; cause: java.lang.UnsatisfiedLinkError: dlopen failed: "/data/data/com.tencent.mm/app_tbs/core_share/libmttwebview.so" is 32-bit instead of 64-bit
+                                                                          `
+解决办法是在libs/armeabi目录下增加一个32位的JNI so， 随便弄个小一点的so加上就可以，如果已经用了其它的JNI so应该不会有这个错误。
+
+2. X5内核不支持file://本地域url，但支持本地相对路径。
